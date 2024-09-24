@@ -36,5 +36,3 @@ next-env.d.ts
 
 # Ignore environment files
 .env
-yarn-error.log
-yarn.lock

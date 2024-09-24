@@ -1,32 +1,48 @@
-export const HeaderLists = [
+
+import { HeaderListsProps } from "@/types";
+
+
+export const HeaderLists:HeaderListsProps[] = [
     {
         name: "Home",
-        link: "/",
-        islink: false,
-        isDivlink:false,
-        icon:"home.svg"
+        link: "#",
+        css:"dark:text-white text-black"
+       
       },
       {
-        name: "Create Your Own NFT",
-        link: "/Nftai",
-        islink: false,
-        isDivlink:false,
-        icon:"NFT.svg"
+        name: "About",
+        link: "#about",
+        css:"dark:text-white text-black"
+
+    
       },
       {
-        name: "How its Work?",
-        link: "/Work",
-        islink: false,
-        isDivlink:false,
-        icon:"home.svg"
+        name: "Experience",
+        link: "#experience",
+        css:"dark:text-white text-black"
+
+        
       },
       {
-        name: "FaQs",
-        link: "/faq",
-        islink: false,
-        isDivlink:false,
-        icon:"faq.svg"
+        name: "Project",
+        link: "#project",
+        css:"dark:text-white text-black"
+
+      
       },
-   
+      {
+        icon: true,
+      link:"",
+        css:""
+
+      },
+
+     {
+        name: "Contact",
+        link: "#contact",
+        css:"contact-btn"
+
+      
+      },
     
   ]

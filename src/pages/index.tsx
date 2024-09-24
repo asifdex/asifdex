@@ -1,4 +1,5 @@
 import Hero from '@/components/Home/Hero'
+import About from '@/components/SECTIONS/About'
 import React from 'react'
 
 const index = () => {
@@ -6,6 +7,7 @@ const index = () => {
     <div>
       {/* hero  */}
       <Hero/>
+      <About/>
     </div>
   )
 }

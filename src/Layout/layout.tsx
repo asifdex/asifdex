@@ -15,9 +15,12 @@ const Layout = (props: any) => {
   }, []);
 
   return (
-    <div className="">
+    <div >
       <Header/>
+      <main className="dark:bg-[#154371] bg-white ">
+
         {props.children}
+      </main>
      <Footer/>
     </div>
   );
