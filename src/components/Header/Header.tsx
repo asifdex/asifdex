@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { HeaderLists } from "@/config/HeaderLists";
 import { AiFillSun } from "react-icons/ai";
 import { RxMoon } from "react-icons/rx";
 import CustomBtn from "../ui/CustomBtn";
 import { CiMenuFries } from "react-icons/ci";
+import {HeaderLists} from "../../config/HeaderLists";
 import MobileMenu from "../MobileMenu";
 
 const Header = () => {
@@ -32,8 +32,11 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div className={`w-full h-20 md:h-28 fixed z-50 dark:bg-[#161616] bg-white flex  px-5 md:px-14 xl:px-20 ${isScroll && "opacity-80 backdrop-blur-lg"} `}>
-      <div className="max-w-7xl mx-auto w-full flex h-full justify-between items-center">
+    <div
+    className={`w-full h-20 md:h-28 fixed z-50 dark:bg-black bg-white flex ${
+      isScroll ? "md:backdrop-blur-md md:dark:bg-opacity-50 md:bg-opacity-60" : ""
+    } px-5 md:px-14 xl:px-20`}
+  >      <div className="max-w-7xl mx-auto w-full flex h-full justify-between items-center">
         <div className="flex items-center gap-2">
           <Image
             src="/fi.png"
@@ -76,7 +79,7 @@ const Header = () => {
               handleclick={toggleMobileMenu}
               othercss=""
             />
-            <MobileMenu isOpen={isMenuOpen} onClose={toggleMobileMenu} activeLink={activeLink}   setactiveLink={setactiveLink}/>
+            <MobileMenu isOpen={isMenuOpen} onClose={toggleMobileMenu} activeLink={activeLink} isScroll={isScroll}  setactiveLink={setactiveLink}/>
         </div>
 
       </div>

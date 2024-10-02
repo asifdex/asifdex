@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { AiFillSun } from "react-icons/ai";
 import { RxMoon } from "react-icons/rx";
 
-const MobileMenu = ({ isOpen, onClose, activeLink, setactiveLink }: any) => {
+const MobileMenu = ({ isOpen, onClose, activeLink, setactiveLink}: any) => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
@@ -16,17 +16,18 @@ const MobileMenu = ({ isOpen, onClose, activeLink, setactiveLink }: any) => {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 z-20"
+
+          className={` fixed inset-0  dark:bg-black bg-white opacity-50 z-20 `}
           onClick={onClose}
         />
       )}
 
       {/* Mobile menu panel */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 dark:bg-black dark:text-white text-black  bg-white z-30 transform transition-transform duration-300 ${
+        className={` fixed top-0 left-0 h-full w-64 dark:bg-black dark:text-white text-black  bg-white z-30 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
-      >
+        >
         <div className="flex items-center justify-between p-4">
           <Image src="/fi.png" alt="logo" width={50} height={40} />
           <button onClick={onClose} className="text-xl text-yellow-400">

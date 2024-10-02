@@ -1,16 +1,17 @@
-import Hero from '@/components/Home/Hero'
-import About from '@/components/SECTIONS/About'
-import React from 'react'
+import Hero from "@/components/Home/Hero";
+import About from "@/components/SECTIONS/About";
+import React from "react";
 
 const index = () => {
   return (
-    <div>
+    <div className="dark:bg-black dark:text-white bg-white text-black w-full h-full">
       {/* hero  */}
-      <Hero/>
-      <About/>
+      <main className="dark:bg-welcome  bg-welcome-l  ">
+        <Hero />
+      </main>
+      <About />
     </div>
-  )
-}
+  );
+};
 
-export default index
-
+export default index;
