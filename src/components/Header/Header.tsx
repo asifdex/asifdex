@@ -5,7 +5,7 @@ import { AiFillSun } from "react-icons/ai";
 import { RxMoon } from "react-icons/rx";
 import CustomBtn from "../ui/CustomBtn";
 import { CiMenuFries } from "react-icons/ci";
-import {HeaderLists} from "../../config/HeaderLists";
+import { HeaderLists } from "../../config/HeaderLists";
 import MobileMenu from "../MobileMenu";
 
 const Header = () => {
@@ -33,10 +33,13 @@ const Header = () => {
   };
   return (
     <div
-    className={`w-full h-20 md:h-28 fixed z-50 dark:bg-black bg-white flex ${
-      isScroll ? "md:backdrop-blur-md md:dark:bg-opacity-50 md:bg-opacity-60" : ""
-    } px-5 md:px-14 xl:px-20`}
-  >      <div className="max-w-7xl mx-auto w-full flex h-full justify-between items-center">
+      className={`w-full h-20 md:h-28 fixed z-50 dark:bg-black bg-white flex ${
+        isScroll
+          ? "md:backdrop-blur-md md:dark:bg-opacity-50 md:bg-opacity-60 "
+          : ""
+      } `}
+    >
+      <div className="max-screen w-full flex h-full justify-between items-center">
         <div className="flex items-center gap-2">
           <Image
             src="/fi.png"
@@ -53,13 +56,20 @@ const Header = () => {
           {HeaderLists.map((items, idx) => (
             <a
               key={idx}
-              onClick={() => handleclick(items.link, !!items.icon)}
-              href={items.link || "#"}
+              onClick={(e) => {
+                if (items.icon) {
+                  e.preventDefault(); // Prevent navigation for the theme toggle
+                  handleclick("", true); // Pass `true` for isIcon to toggle the theme
+                } else {
+                  handleclick(items.link, false); // Handle regular link clicks
+                }
+              }}
+              href={items.link || "/"} // The link is ignored when the icon is clicked
               className={`${
-                activeLink === items.link && idx < 5 
-                  ? "dark:text-[#af6aef] "
+                activeLink === items.link && idx < 5
+                  ? "dark:text-[#af6aef]"
                   : items.css
-              }  transition `}
+              } transition`}
             >
               {items.icon ? (
                 theme === "dark" ? (
@@ -74,14 +84,19 @@ const Header = () => {
           ))}
         </div>
         <div className="flex md:hidden">
-        <CustomBtn
-              text={<CiMenuFries className="text-2xl" />}
-              handleclick={toggleMobileMenu}
-              othercss=""
-            />
-            <MobileMenu isOpen={isMenuOpen} onClose={toggleMobileMenu} activeLink={activeLink} isScroll={isScroll}  setactiveLink={setactiveLink}/>
+          <CustomBtn
+            text={<CiMenuFries className="text-2xl" />}
+            handleclick={toggleMobileMenu}
+            othercss=""
+          />
+          <MobileMenu
+            isOpen={isMenuOpen}
+            onClose={toggleMobileMenu}
+            activeLink={activeLink}
+            isScroll={isScroll}
+            setactiveLink={setactiveLink}
+          />
         </div>
-
       </div>
     </div>
   );

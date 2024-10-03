@@ -1,5 +1,6 @@
 import Hero from "@/components/Home/Hero";
 import About from "@/components/SECTIONS/About";
+import Contact from "@/components/SECTIONS/Contact";
 import React from "react";
 
 const index = () => {
@@ -10,6 +11,7 @@ const index = () => {
         <Hero />
       </main>
       <About />
+      <Contact/>
     </div>
   );
 };

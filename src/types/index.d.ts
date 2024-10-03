@@ -15,3 +15,11 @@ declare type CusomBtnProps ={
     icon?:IconType
 
 }
+declare type InputProps ={
+    placeholder:string;
+     name:string;
+     type:string;
+    value?:string;
+     handleChange:(e)=>void;
+     othercss?:string
+}

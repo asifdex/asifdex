@@ -1,5 +1,5 @@
 import React from "react";
-import CustomBtn from "../ui/CustomBtn";
+
 import TextGenerateEffect from "../ui/textGenaretorEffect";
 import Image from "next/image";
 
