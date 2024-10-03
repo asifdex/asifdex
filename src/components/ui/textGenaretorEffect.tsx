@@ -2,12 +2,14 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "../../utils/cn";
+
 interface Props {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
 }
+
 const TextGenerateEffect = ({
   words,
   className,
@@ -15,7 +17,8 @@ const TextGenerateEffect = ({
   duration = 0.1,
 }: Props) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -24,11 +27,11 @@ const TextGenerateEffect = ({
         filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: duration ? duration : 0.5,
+        duration: duration,
         delay: stagger(0.1),
       }
     );
-  }, [scope.current]);
+  }, [animate, duration, filter]); // Added dependencies
 
   const renderWords = () => {
     return (
@@ -39,7 +42,7 @@ const TextGenerateEffect = ({
               key={word + idx}
               className={`${
                 idx === 1
-                  ? "bg-clip-text text-transparent bg-gradient-to-r font-extrabold text-2xl  from-[#4ca5ffce] to-[#b673f8c9]"
+                  ? "bg-clip-text text-transparent bg-gradient-to-r font-extrabold text-2xl from-[#4ca5ffce] to-[#b673f8c9]"
                   : "dark:text-white text-black"
               } opacity-0`}
               style={{
@@ -57,11 +60,12 @@ const TextGenerateEffect = ({
   return (
     <div className={cn("font-normal", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-black text-xl tracking-[1px] leading-snug ">
+        <div className="dark:text-white text-black text-xl tracking-[1px] leading-snug">
           {renderWords()}
         </div>
       </div>
     </div>
   );
 };
+
 export default TextGenerateEffect;

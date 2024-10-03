@@ -46,10 +46,12 @@ const Contact = () => {
         <div className="md:w-1/2 w-full flex flex-col justify-self items-center gap-3">
           <h1 className="text-[26px] font-extrabold text-center">
             Ready to take <span className="text-purple">your</span> digital
-            presence to the next level?
+            presence to the next level? Reach out to me today and let&apos;s
+            discuss how I can help you achieve your goals.
           </h1>
+
           <p className="pl-5">
-            Reach out to me today and let's discuss how I can help you achieve
+            Reach out to me today and let&apos;s discuss how I can help you achieve
             your goals
           </p>
         </div>
@@ -58,9 +60,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="max-w-lg mx-auto p-4 space-y-4"
           >
-            <p className="contact-headline">
-              Contact us
-            </p>
+            <p className="contact-headline">Contact us</p>
 
             <Input
               placeholder="User Name"
