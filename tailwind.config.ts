@@ -68,6 +68,8 @@ const config: Config = {
         "radial-gradient(at 0% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 50% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 100% 0%, rgb(255, 255, 255) 0, transparent 50%)",
         welcome:
         " radial-gradient(at 0% 0%,hsla(253, 16%, 7%, 1) 0,transparent 50% ),radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
+       services:" radial-gradient at 0% 0%,hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
+       spanLine:"repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 10px)",
         contact:
           " radial-gradient(circle, rgba(36,37,40,1) 0%, rgba(0,0,0,1) 87%, rgba(0,0,0,1) 100%)",
       },

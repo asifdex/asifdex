@@ -10,18 +10,28 @@
 .blur {
   filter: drop-shadow(40);
 }
+  /* GOOGLE FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap');
+.tsukimi {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  font-style: normal;
+};
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.raleway{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 
 /* styles.css or your global CSS file */
 
-.gradient-bg-services {
-  background-color: #0f0e13;
-  background-image: radial-gradient(
-      at 0% 0%,
-      hsla(253, 16%, 7%, 1) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
-}
 
 .gradient-bg-transactions {
   background-color: #0f0e13;
@@ -48,10 +58,14 @@
   box-shadow: 0 4px 30px rgba(0,0,0,.2);
   border: 1px solid rgba(0,0,0,.3);
 }
-
+ .project-bg {
+  background: rgb(4,7,29);
+  background-color:linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%);
+  border-radius: calc(1.75rem* 0.96);
+ }
 @layer utilities {
   .max-screen{
-    @apply px-5 md:px-14 xl:px-0 md:max-w-7xl w-full h-full mx-auto
+    @apply px-7 md:px-14 xl:px-0 md:max-w-7xl w-full h-full mx-auto
   }
   .contact-btn {
     @apply rounded-full bg-black text-white dark:bg-white dark:text-black  px-6 py-2 font-extrabold;

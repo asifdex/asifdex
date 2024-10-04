@@ -46,8 +46,7 @@ const Contact = () => {
         <div className="md:w-1/2 w-full flex flex-col justify-self items-center gap-3">
           <h1 className="text-[26px] font-extrabold text-center">
             Ready to take <span className="text-purple">your</span> digital
-            presence to the next level? Reach out to me today and let&apos;s
-            discuss how I can help you achieve your goals.
+            presence to the next level?
           </h1>
 
           <p className="pl-5">
@@ -55,7 +54,7 @@ const Contact = () => {
             your goals
           </p>
         </div>
-        <div className="p-5 md:w-96 dark:bg-[rgba(39,51,89,.4)] bg-[#ffffffbd] flex flex-col justify-start items-center blue-glassmorphism">
+        <div className="p-5 md:w-96 dark:bg-[rgba(39,51,89,.4)] hover:scale-110 transition-transform  duration-300 ease-in-out bg-[#ffffffbd] flex flex-col justify-start items-center blue-glassmorphism">
           <form
             onSubmit={handleSubmit}
             className="max-w-lg mx-auto p-4 space-y-4"

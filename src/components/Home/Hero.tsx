@@ -4,16 +4,30 @@ import TextGenerateEffect from "../ui/textGenaretorEffect";
 import Image from "next/image";
 
 const Hero = () => {
-  const words =
-    "I’m Jashadul, but you can call me Asif. I'm a professional website developer with over 3 years of experience as a highly skilled Web3 developer";
   return (
-    <div className="max-w-7xl mx-auto w-full h-[60vh]  md:h-[80vh] px-5 md:px-14 xl:px-20 flex flex-col md:flex-row justify-center items-center">
-      <div className="w-full md:w-1/2 flex flex-col gap-3 items-start">
-        <p className="text-xl font-extrabold  mb-4 tracking-[2px] ">Hey There...!</p>
-        <TextGenerateEffect words={words} />
-        {/* <CustomBtn text="" type="button" othercss='bg-purple '/>
-         */}
-        <button className="relative bg-purple top-5 text-white font-semibold py-2 px-7 transform -skew-x-12 z-20 transition-all duration-300 group ">
+    <div className="max-w-7xl mx-auto w-full h-[60vh]  md:h-screen px-5 md:px-14 xl:px-20 flex flex-col md:flex-row justify-center items-center">
+      <div className="w-full md:w-1/2 flex flex-col  items-start">
+        <h2 className="text-[24px] leading-3 font-extrabold  mb-4 text-red-600 mx-auto md:mx-0">
+          HEY THERE!
+        </h2>
+        <h1 className="mx-auto md:mx-0 text-[30px] md:text-[50px] lg:text-[64px] tsukimi mb-3">
+          I&apos;M JASHADUL ASIF.
+        </h1>
+        <span
+          className="w-full my-12 h-1 md:flex hidden dark:bg-white rounded-full bg-black bg-spanLine"
+          
+        />
+
+        <p className="raleway">
+          I&apos;m a freelancer. specializing in <span className="bg-clip-text text-transparent bg-gradient-to-r font-extrabold text-2xl from-[#4ca5ffce] to-[#b673f8c9]">website developer</span> , Community
+          management and crypto trader
+        </p>
+        <p className=" mt-3 raleway">
+          I have 3+ years of experience as an Web developer and have worked with
+          various clients including Blockchain Innovators . Check out my
+          portfolio to see what I do.
+        </p>
+        <button className="relative bg-[#af6aef] mx-auto  md:mx-0 top-5 text-white font-semibold py-2 px-7 transform -skew-x-12 z-20 transition-all duration-300 group ">
           <a
             href="https://github.com/asifdex"
             target="_blank"
@@ -34,7 +48,7 @@ const Hero = () => {
               alt="profile"
               layout="fill"
               className="object-cover rounded-full pointer-events-none"
-            /> 
+            />
           </div>
         </div>
       </div>
