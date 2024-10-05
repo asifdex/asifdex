@@ -23,3 +23,16 @@ declare type InputProps ={
      handleChange:(e)=>void;
      othercss?:string
 }
+
+declare type ExperienceType ={
+    title: string;
+    company_name: string;
+    icon: string;
+    iconBg: string;
+    date: string;
+    points: string[];
+  }
+  declare type ExperienceCardProps ={
+    experience: ExperienceType;
+  }
+  

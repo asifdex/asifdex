@@ -2,6 +2,8 @@ import Hero from "@/components/Home/Hero";
 import About from "@/components/SECTIONS/About";
 import Contact from "@/components/SECTIONS/Contact";
 import Project from "@/components/SECTIONS/Project";
+import Experience from "@/components/SECTIONS/Experience";
+
 import React from "react";
 
 const index = () => {
@@ -11,11 +13,11 @@ const index = () => {
         <Hero />
       </main>
       <About />
-     
+      <Experience />
 
-      <Project/>
+      <Project />
 
-      <Contact/>
+      <Contact />
     </div>
   );
 };

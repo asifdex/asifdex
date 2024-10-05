@@ -10,28 +10,24 @@
 .blur {
   filter: drop-shadow(40);
 }
-  /* GOOGLE FONT  */
-@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap');
+/* GOOGLE FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap");
 .tsukimi {
   font-family: "Tsukimi Rounded", sans-serif;
   font-weight: 600;
   line-height: 60px;
   font-style: normal;
-};
+}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-.raleway{
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.raleway {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-
-
 /* styles.css or your global CSS file */
-
 
 .gradient-bg-transactions {
   background-color: #0f0e13;
@@ -55,19 +51,38 @@
 
 .blue-glassmorphism {
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0,0,0,.2);
-  border: 1px solid rgba(0,0,0,.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* styles.css */
+.sun-background {
+  background-color: black; /* Black background */
+  position: relative; /* Required for absolutely positioned children */
+  overflow: hidden; /* Hide overflow for circular elements */
+}
+
+/* Main radial gradient with blur */
+.sun-effect {
+  background: radial-gradient(circle, rgba(51, 230, 88, 1) 8%, rgba(5, 54, 46, 0) 100%);
+  position: absolute;
+  width: 10% ;
+  height: 10%;
+  filter: blur(50px); /* Apply blur to create a soft sun effect */
+  pointer-events: none; /* Prevent interaction */
 }
 
 
-/* Default styles for light mode */
-
-
-
+.timeline-dark .vertical-timeline::before {
+  background-color: red; /* Change the line color to red */
+}
+.timeline-light .vertical-timeline::before {
+  background-color: yellow; /* Change the line color to red */
+}
 
 @layer utilities {
-  .max-screen{
-    @apply px-7 md:px-14 xl:px-0 md:max-w-7xl w-full h-full mx-auto
+  .max-screen {
+    @apply px-7 md:px-14 xl:px-0 md:max-w-7xl w-full h-full mx-auto;
   }
   .contact-btn {
     @apply rounded-full bg-black text-white dark:bg-white dark:text-black  px-6 py-2 font-extrabold;
@@ -76,7 +91,8 @@
   .contact-bg {
     @apply dark:bg-contact dark:bg-[rgb(36,37,40)] bg-white;
   }
-  .contact-headline{
-    @apply text-2xl bg-clip-text text-transparent font-extrabold italic text-center bg-gradient-to-r from-pink-400 to-purple bg-200% animate-gradient-slide
+  .contact-headline {
+    @apply text-2xl bg-clip-text text-transparent font-extrabold italic text-center bg-gradient-to-r from-pink-400 to-purple bg-200% animate-gradient-slide;
   }
+  
 }
