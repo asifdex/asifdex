@@ -11,7 +11,10 @@ const index = () => {
         <Hero />
       </main>
       <About />
+     
+
       <Project/>
+
       <Contact/>
     </div>
   );

@@ -50,29 +50,36 @@ const config: Config = {
       },
 
       animation: {
-        'gradient-slide': 'gradient-slide 1s ease infinite',
+        "gradient-slide": "gradient-slide 1s ease infinite",
       },
       backgroundSize: {
-        '200%': '200% 200%', // Makes the gradient wide enough to animate
+        "200%": "200% 200%", // Makes the gradient wide enough to animate
       },
       keyframes: {
-        'gradient-slide': {
-          '0%': { 'background-position': '0% 50%' },
-          '100%': { 'background-position': '100% 50%' },
+        "gradient-slide": {
+          "0%": { "background-position": "0% 50%" },
+          "100%": { "background-position": "100% 50%" },
         },
       },
-
+      boxShadow:{
+        "project-sh":"0 4px 30px rgba(0,0,0,.2)"
+      }
+,
       backgroundImage: {
-        
         "welcome-l":
-        "radial-gradient(at 0% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 50% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 100% 0%, rgb(255, 255, 255) 0, transparent 50%)",
+          "radial-gradient(at 0% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 50% 0%, rgb(255, 255, 255) 0, transparent 50%), radial-gradient(at 100% 0%, rgb(255, 255, 255) 0, transparent 50%)",
         welcome:
-        " radial-gradient(at 0% 0%,hsla(253, 16%, 7%, 1) 0,transparent 50% ),radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
-       services:" radial-gradient at 0% 0%,hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
-       spanLine:"repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 10px)",
+          " radial-gradient(at 0% 0%,hsla(253, 16%, 7%, 1) 0,transparent 50% ),radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
+        services:
+          " radial-gradient at 0% 0%,hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
+        spanLine:
+          "repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 10px)",
         contact:
-          " radial-gradient(circle, rgba(36,37,40,1) 0%, rgba(0,0,0,1) 87%, rgba(0,0,0,1) 100%)",
-      },
+          "radial-gradient(circle, rgba(36,37,40,1) 0%, rgba(0,0,0,1) 87%, rgba(0,0,0,1) 100%)",
+        project: 'linear-gradient(90deg, rgba(245, 243, 243, 1) 0%, rgba(247, 247, 247, 1) 100%)',
+        "project-dark":"linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%)",
+        cm:"radial-gradient(circle, rgba(185,238,174,1) 0%, rgba(148,187,233,0) 49%),radial-gradient(circle, rgba(0,44,97,0) 0%, rgba(20,20,20,1) 100%, rgba(6,9,13,0) 122%)"
+        },
     },
   },
   plugins: [],
