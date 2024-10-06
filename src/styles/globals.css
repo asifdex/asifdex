@@ -27,7 +27,14 @@
   font-style: normal;
 }
 
-/* styles.css or your global CSS file */
+.gradient-bg-about {
+  background-color: #0f0e13;
+  background-image:
+    radial-gradient(at 0% 0%, rgb(255, 255, 255) 0, transparent 50%),
+     radial-gradient(at 50% 0%, rgb(255, 255, 255) 0, transparent 50%),
+     radial-gradient(at 100% 0%, rgb(255, 255, 255) 0, transparent 50%)
+}
+
 
 .gradient-bg-transactions {
   background-color: #0f0e13;
@@ -55,14 +62,14 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* styles.css */
+
 .sun-background {
   background-color: black; /* Black background */
   position: relative; /* Required for absolutely positioned children */
   overflow: hidden; /* Hide overflow for circular elements */
 }
 
-/* Main radial gradient with blur */
+
 .sun-effect {
   background: radial-gradient(circle, rgba(51, 230, 88, 1) 8%, rgba(5, 54, 46, 0) 100%);
   position: absolute;

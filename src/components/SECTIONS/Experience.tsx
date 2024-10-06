@@ -74,7 +74,7 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <div className="dark:bg-black bg-white relative overflow-hidden">
+    <div className="dark:bg-black bg-white relative overflow-hidden" id="experience">
 
     <h1 className="text-[30px] md:text-[40px] xl:text-[64px] w-full tracking-widest text-center uppercase font-extrabold">
       Work <span className="text-purple">Experience</span>  </h1>

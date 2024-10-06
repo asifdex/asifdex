@@ -44,7 +44,7 @@
       id: 6,
       title: " Digital Banking App",
       des: "A simple online banking platform where users can add funds, view their account balance, and manage transactions securely. Built for a seamless banking experience.",
-      img: "/p5.png",
+      img: "/p6.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://bank-liard-eight.vercel.app",
     },

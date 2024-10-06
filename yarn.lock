@@ -2356,6 +2356,11 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-parallax-tilt@^1.7.245:
+  version "1.7.245"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.245.tgz#436a3483358dc4dc9fd8d4651737ea1c1413721f"
+  integrity sha512-WTyACpCvZgfM2FyN3Yf66stxe+B5L0E6mPoimCOzrBQykJFDE3ojwlhleuEqxFZ44Y289W2PR0gCDapX+N9/Aw==
+
 react-vertical-timeline-component@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.6.0.tgz#aeb4b56be3f397b493c847df79521f3bfb3aab71"

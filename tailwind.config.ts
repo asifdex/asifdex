@@ -55,6 +55,7 @@ const config: Config = {
       boxShadow: {
         "project-sh": "0 4px 30px rgba(0,0,0,.2)",
         'blue-glassmorphism': '0 4px 30px rgba(0, 0, 0, 0.2)',
+        card: "0px 35px 120px -15px #211e35",
       },
       backgroundImage: {
         "welcome-l":
@@ -63,9 +64,9 @@ const config: Config = {
           " radial-gradient(at 0% 0%,hsla(253, 16%, 7%, 1) 0,transparent 50% ),radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
 
         //  services
-
+        about:"radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%),radial-gradient(at 0% 0%, rgb(0, 0, 0) 0, transparent 50%)",
         services:
-          " radial-gradient at 0% 0%,hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
+          "radial-gradient(at 0% 0%,hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%)",
 
         //  experiences
         experience:
